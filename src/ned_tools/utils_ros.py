@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import rospy
-from auv_msgs.msg import BodyVelocityReq, GoalDescriptor
+from cola2_msgs.msg import BodyVelocityReq, GoalDescriptor
 from std_srvs.srv import Empty, EmptyResponse, EmptyRequest
 
 

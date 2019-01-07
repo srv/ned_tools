@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 2.8.3)
 project(ned_tools)
 
 find_package(catkin REQUIRED COMPONENTS
-  auv_msgs
+  cola2_msgs
   cmake_modules
   geometry_msgs
   message_filters
@@ -19,7 +19,7 @@ catkin_python_setup()
 find_package(Eigen3 REQUIRED)
 
 catkin_package(
-  CATKIN_DEPENDS roscpp rospy auv_msgs sensor_msgs geometry_msgs std_msgs std_srvs cmake_modules message_filters
+  CATKIN_DEPENDS roscpp rospy cola2_msgs sensor_msgs geometry_msgs std_msgs std_srvs cmake_modules message_filters
   INCLUDE_DIRS include
   LIBRARIES ned_tools)
 
