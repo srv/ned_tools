@@ -159,31 +159,31 @@ def __splitDegreeMinutes__(value):
     return int(val_deg), float(val_min)
 
 
-if __name__ == '__main__':
-    """ Test example """
-    lat0 = 4303.4739        #DDDMM.MMMM
-    lon0 = 600.5378         #DDDMM.MMMM
-    lat1 = 43.05760         #DDD.DDDDD
-    lon1 = 6.007583         #DDD.DDDDD
-    lat2 = 43.057417        #DDD.DDDDD
-    lon2 = 6.007667         #DDD.DDDDD
-    lat3 = 39.997417        #DDD.DDDDD
-    lon3 = 6.007667         #DDD.DDDDD
-    lat4 = 40.017417        #DDD.DDDDD
-    lon4 = 6.00667         #DDD.DDDDD
-    lat5 = 39.9717417        #DDD.DDDDD
-    lon5 = 6.01667         #DDD.DDDDD
+# if __name__ == '__main__':
+#     """ Test example """
+#     lat0 = 4303.4739        #DDDMM.MMMM
+#     lon0 = 600.5378         #DDDMM.MMMM
+#     lat1 = 43.05760         #DDD.DDDDD
+#     lon1 = 6.007583         #DDD.DDDDD
+#     lat2 = 43.057417        #DDD.DDDDD
+#     lon2 = 6.007667         #DDD.DDDDD
+#     lat3 = 39.997417        #DDD.DDDDD
+#     lon3 = 6.007667         #DDD.DDDDD
+#     lat4 = 40.017417        #DDD.DDDDD
+#     lon4 = 6.00667         #DDD.DDDDD
+#     lat5 = 39.9717417        #DDD.DDDDD
+#     lon5 = 6.01667         #DDD.DDDDD
 
-    # lat_0, lon_0 = degreeMinute2Degree(lat0, lon0)
-    # ned = NED(lat0, lon0, 0.0)
-    # print ned.llh2Eecef([lat1, lon1, 0.0])
+#     # lat_0, lon_0 = degreeMinute2Degree(lat0, lon0)
+#     # ned = NED(lat0, lon0, 0.0)
+#     # print ned.llh2Eecef([lat1, lon1, 0.0])
 
-    ned = NED(lat3, lon3, 0.0)
-    ned_1 = ned.geodetic2ned([lat4, lon4, 0.0])
-    print ned_1
-    ned_2 = ned.geodetic2ned([lat5, lon5, 0.0])
-    print ned_2
-    lat, lon, h = ned.ned2geodetic(ned_2)
-    print lat, lon, h
+#     ned = NED(lat3, lon3, 0.0)
+#     ned_1 = ned.geodetic2ned([lat4, lon4, 0.0])
+#     print ned_1
+#     ned_2 = ned.geodetic2ned([lat5, lon5, 0.0])
+#     print ned_2
+#     lat, lon, h = ned.ned2geodetic(ned_2)
+#     print lat, lon, h
 
-    print np.sqrt((ned_1[0] - ned_2[0])**2 + (ned_1[1] - ned_2[1])**2)
+#     print np.sqrt((ned_1[0] - ned_2[0])**2 + (ned_1[1] - ned_2[1])**2)
