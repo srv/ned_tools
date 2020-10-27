@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import rospy
 from cola2_msgs.msg import BodyVelocityReq, GoalDescriptor
 from std_srvs.srv import Empty, EmptyResponse, EmptyRequest
